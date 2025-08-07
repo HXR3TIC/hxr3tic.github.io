@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title will be inserted here by the script -->
+    <title>Welcome to 0xh | hxr3tic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --neon-green: #bfff00;
+            --dark-bg: #0a0a0a;
+            --card-bg-rgba: rgba(20, 20, 20, 0.4);
+            --border-color-rgba: rgba(191, 255, 0, 0.15);
+            --border-hover-rgba: rgba(191, 255, 0, 0.4);
+            --text-primary: #f0f0f0;
+            --text-secondary: #a0a0a0;
+        }
+        
+        html {
+            background-color: var(--dark-bg);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-primary);
+        }
+        
+        .glass-card {
+            background: var(--card-bg-rgba);
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color-rgba);
+        }
+
+        .bg-blurry-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(150px);
+            opacity: 0.7;
+        }
+        .blob-1 {
+            width: 300px;
+            height: 300px;
+            background: rgba(191, 255, 0, 0.15);
+            top: -50px;
+            left: -100px;
+            animation: move-blob-1 20s infinite alternate;
+        }
+        .blob-2 {
+            width: 400px;
+            height: 400px;
+            background: rgba(191, 255, 0, 0.1);
+            bottom: -100px;
+            right: -150px;
+            animation: move-blob-2 25s infinite alternate;
+        }
+
+        @keyframes move-blob-1 {
+            from { transform: translate(-50px, -50px) scale(1); }
+            to { transform: translate(50px, 100px) scale(1.2); }
+        }
+        @keyframes move-blob-2 {
+            from { transform: translate(50px, 150px) scale(1); }
+            to { transform: translate(-100px, -50px) scale(0.8); }
+        }
+
+        /* Styling for Markdown Content */
+        .blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4 {
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        .blog-content h1 { font-size: 2.25rem; }
+        .blog-content h2 { font-size: 1.875rem; }
+        .blog-content h3 { font-size: 1.5rem; }
+        .blog-content h4 { font-size: 1.25rem; }
+        
+        .blog-content p {
+            line-height: 1.75;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+        .blog-content a {
+            color: var(--neon-green);
+            text-decoration: underline;
+        }
+        .blog-content strong, .blog-content em {
+            color: var(--neon-green);
+        }
+        .blog-content strong {
+            font-weight: 600;
+        }
+        .blog-content em {
+            font-style: italic;
+        }
+        .blog-content code {
+            background-color: rgba(0,0,0,0.3);
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            color: var(--neon-green);
+        }
+        .blog-content pre {
+            background-color: rgba(0,0,0,0.5);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+        }
+        .blog-content pre code {
+            padding: 0;
+            background: none;
+            color: var(--text-primary);
+        }
+        .blog-content ul, .blog-content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+        .blog-content ul {
+            list-style-type: disc;
+        }
+        .blog-content ol {
+            list-style-type: decimal;
+        }
+        .blog-content li {
+            margin-bottom: 0.5rem;
+        }
+        .blog-content blockquote {
+            border-left: 4px solid var(--neon-green);
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+        .blog-content hr {
+            border-color: var(--border-color-rgba);
+            margin: 2rem 0;
+        }
+        .blog-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="bg-blurry-gradient">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <header class="mb-8">
+            <a href="../index.html" class="flex items-center text-gray-400 hover:text-white transition-colors">
+                <i data-lucide="arrow-left" class="h-4 w-4 mr-2"></i>
+                Back to Home
+            </a>
+        </header>
+
+        <main>
+            <article class="glass-card rounded-2xl p-8 md:p-12">
+                <div class="blog-content">
+                    <!-- The blog content will be inserted here by the script -->
+                    <h1>Welcome to 0xh</h1>
+
+<p>This is the first post on my website. If you're reading this, thank you for being here, i hope that you'll have a great time. This space is meant mainly for sharing my projects and knowledge with you and others who find my work interesting.
+Enjoy your stay.</p>
+
+                </div>
+            </article>
+        </main>
+
+        <footer class="py-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 hxr3tic. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+[
+  {
+    "image": "https://placehold.co/600x300/1f2937/bfff00?text=HACK+16-bit",
+    "title": "HACK Computer",
+    "description": "A 16-bit computer built completely from scratch using HDL.",
+    "tags": ["HW design", "CS"],
+    "sourceCodeUrl": "#",
+    "liveDemoUrl": "#"
+  },
+  {
+    "image": "https://placehold.co/600x300/1f2937/bfff00?text=BioWear",
+    "title": "BioWear",
+    "description": "An EMG suit for movement analysis.",
+    "tags": ["Bioinformatics", "HW design"],
+    "sourceCodeUrl": "#",
+    "liveDemoUrl": "#"
+  },
+  {
+    "image": "https://placehold.co/600x300/1f2937/bfff00?text=Portfolio",
+    "title": "Portfolio",
+    "description": "A digital portfolio for sharing my projects and the interesting things I learned while building them.",
+    "tags": ["JavaScript", "API"],
+    "sourceCodeUrl": "#",
+    "liveDemoUrl": "#"
+  },
+  {
+    "image": "https://placehold.co/600x300/1f2937/bfff00?text=Hamerská+Krčma",
+    "title": "Hamerská Krčma Website",
+    "description": "A static website project.",
+    "tags": ["HTML&CSS", "Bootstrap"],
+    "sourceCodeUrl": "#",
+    "liveDemoUrl": ""
+  },
+  {
+    "image": "https://placehold.co/600x300/1f2937/bfff00?text=Satir+Institut",
+    "title": "Satir Institut",
+    "description": "A placeholder static website project.",
+    "tags": ["HTML&CSS", "Bootstrap"],
+    "sourceCodeUrl": "#",
+    "liveDemoUrl": ""
+  }
+]
